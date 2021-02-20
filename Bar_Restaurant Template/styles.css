@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto';
+}
+
+.wrapper {
+    background-image:url(images/bar.jpg);
+    background-position:center center;
+    background-size:cover;
+    min-height:100vh;
+    background-repeat:no-repeat;
+}
+
+h1 {
+    color:#fff;
+}
+
+h2 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+div.menu {
+    
+}
+
+/*=======================================Navbar===========================================*/
+
+.navbar {
+    font-family: 'Kaushan Script', cursive;
+    font-size:1.2rem;
+}
+
+/*=======================================Menu===========================================*/
+
+div.container-fluid.menu {
+    padding:0;
+   }
+  
+   #menu {
+     margin:32px;
+   }
+  
+   a.menu {
+    color:#363636;
+    text-decoration: underline;
+  }
+
+  img.menu {
+    width:100%;
+  }
