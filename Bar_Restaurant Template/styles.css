@@ -7,7 +7,8 @@ body {
 }
 
 .wrapper {
-    background-image:url(images/bar.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .5),
+    rgba(0, 0, 0, 0.8)), url(images/bar.jpg);
     background-position:center center;
     background-size:cover;
     min-height:100vh;
@@ -18,12 +19,45 @@ h1 {
     color:#fff;
 }
 
+/*=======================================HEADER===========================================*/
+
+h1.header {
+    font-family: 'Kaushan Script', cursive;
+    font-size:4rem;
+    animation-duration:1.5s;
+}
+
+.caption {
+    margin:auto;
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+    width:100%;
+    max-width:100%;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+.btn.header {
+    background-color:#fff;
+    color:#000;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .btn.header:hover {
+    background-color:#000;
+    color:#fff;
+    border:1px solid #fff;
+  } 
+
 h2 {
     font-family: 'Kaushan Script', cursive;
 }
 
-div.menu {
-    
+p.lead {
+  color:#fff;
 }
 
 /*=======================================Navbar===========================================*/
@@ -50,4 +84,11 @@ div.container-fluid.menu {
 
   img.menu {
     width:100%;
+    
   }
+
+
+  div.menu {
+   
+}
+
