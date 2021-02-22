@@ -6,6 +6,7 @@ body {
     font-family: 'Roboto';
 }
 
+
 .wrapper {
     background-image: linear-gradient(rgba(0, 0, 0, .5),
     rgba(0, 0, 0, 0.8)), url(images/bar.jpg);
@@ -18,6 +19,32 @@ body {
 h1 {
     color:#fff;
 }
+
+/*--- Nav Scrolling Offset --*/
+.offset:before {
+  height: 4rem;
+  margin-top: -4rem;
+  content: "";
+  display: block;
+}
+
+.fa-facebook-square {
+  color: #000;
+  font-size:1.2rem;
+  margin-left:1rem;
+}
+
+.fa-twitter-square {
+  color: #000;
+  font-size:1.2rem;
+  margin-left:1rem;
+}
+
+.fa-beer {
+  font-size:3rem;
+}
+
+
 
 /*=======================================HEADER===========================================*/
 
@@ -67,6 +94,10 @@ p.lead {
     font-size:1.2rem;
 }
 
+/*=======================================About===========================================*/
+#about {
+  margin:32px;
+}
 /*=======================================Menu===========================================*/
 
 div.container-fluid.menu {
@@ -91,4 +122,33 @@ div.container-fluid.menu {
   div.menu {
    
 }
+
+/*=======================================Beer===========================================*/
+
+div.container-fluid.beer {
+  background-image: linear-gradient(rgba(0, 0, 0, .1),
+    rgba(0, 0, 0, 0.8)), url(images/beer.jpg);
+    background-position:center center;
+    background-size:cover;
+    min-height:100vh;
+    background-repeat:no-repeat;
+ }
+
+ div.draught {
+   background-color:#fff;
+   margin: 10rem 5rem 10rem 5rem;
+   padding:3rem;
+ }
+
+ h2.beer {
+  font-family: 'Kaushan Script', cursive;
+  font-size:2rem;
+  font-weight:bold;
+ }
+
+ p.beer {
+   font-family:Roboto;
+   font-size: 1.4rem;
+   color:#413e3e;
+ }
 

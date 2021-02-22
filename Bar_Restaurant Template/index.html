@@ -8,16 +8,19 @@
     <!-- Bootstrap CSS -->
     <script src="https://kit.fontawesome.com/15360bf497.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/15360bf497.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
    <!-- <link rel="stylesheet" href="css/animate.css"/>-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Tanner's Bar and Grille</title>
   </head>
   <body>
       <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Tanner's Bar and Grille</a>
+        <a href="" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="" target="_blank"><i class="fab fa-twitter-square"></i></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,6 +30,9 @@
               <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+          </li> 
+            <li class="nav-item">
               <a class="nav-link" href="#menu">Menu</a>
             </li>
             <li class="nav-item">
@@ -35,12 +41,8 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">Draught Beer</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Reservations</a>
-            </li> 
-            <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
-            </li> 
+          
+           
           </ul>
         </div>
       </nav>
@@ -49,27 +51,44 @@
     <div class="wrapper">
         <div class="container m-0">
           <div class="caption text-center">
-            <h1 class="header animate__animated animate__backInDown">Welcome to Tanner's Bar and Grille</h1>
+           <h1 class="header animate__animated animate__backInDown">Welcome to Tanner's Bar and Grille</h1>
           <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <button type="button" class="btn header">Reservations</button>
-          <button type="button" class="btn header">Menu</button>
+          <button type="button" class="btn header">Contact Us</button>
           </div>
         </div>
     </div>
   </div>
-<!--Menu Section-->
-
+  <!--About Section-->
 <div class="container-fluid menu">
-  <div id="menu">
+  <div id="about" class="offset">
+    <div class="row">
+      <div class="col-sm-12 col-lg-6" data-aos="fade-left">
+        <h2 class="font-weight-bold">About Us</h2>
+          <hr align="left" style="color:#fff">
+          <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius lobortis dolor sed porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec vel metus ut ipsum suscipit mattis in sit amet justo. </p>
+      </div>
+      <div class="col-sm-12 col-lg-6">
+        <div class="scroll-animations">
+          <div class="menu" data-aos="fade-right">
+            <img class="menu" src="images/cook.jpg">
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Menu Section-->
+<div class="container-fluid menu">
+  <div id="menu" class="offset">
     <div class="row">
       <div class="col-sm-12 col-lg-6">
         <div class="scroll-animations">
-          <div class="menu animate animate__animated animate__fadeInLeft">
+          <div class="menu" data-aos="fade-right">
             <img class="menu" src="images/menu.jpg">
         </div>
         </div>
       </div>
-      <div class="col-sm-12 col-lg-6">
+      <div class="col-sm-12 col-lg-6" data-aos="fade-left">
         <h2 class="font-weight-bold">Our Menu</h2>
           <hr align="left" style="color:#fff">
           <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius lobortis dolor sed porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec vel metus ut ipsum suscipit mattis in sit amet justo. </p>
@@ -77,10 +96,36 @@
     </div>
   </div>
 </div>
-
   <!--End Menu Section-->
+
+  <div class="container-fluid beer">
+    <div id="">
+      <div class="row">
+        <div class="col draught">
+          <div class="text-center">
+            <i class="fas fa-beer"></i>
+            <h2 class="beer">Draught Beer</p>
+            <div class="row">
+              <div class="col-sm-12 col-lg-6">
+                <p class="beer">Test</p>
+              </div>
+              <div class="col-sm-12 col-lg-6">
+                <p class="beer">Test</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
     <!-- Optional JavaScript; choose one of the two! -->
-    <script src="animate.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration:3000,
+      });
+    </script>
+   
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
